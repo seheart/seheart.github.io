@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seth - Digital Product Leader & Government Technology</title>
+    <meta name="description" content="Digital product leader specializing in government technology, accessibility, and user-centered design for federal agencies.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #667eea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        
+        .bio {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .project {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+        
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .project-desc {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .project-tech {
+            font-size: 0.85rem;
+            color: #667eea;
+            font-weight: 500;
+            margin-top: 0.75rem;
+        }
+        
+        .contact {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-link {
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">S</div>
+        <h1>Seth</h1>
+        <div class="subtitle">Digital Product Leader & Government Technology Specialist</div>
+        
+        <div class="bio">
+            Experienced product leader specializing in government technology, accessibility compliance, and user-centered design for federal agencies. Passionate about building digital services that serve the public good.
+        </div>
+        
+        <div class="projects">
+            <a href="/fema-usds-demo/" class="project">
+                <div class="project-title">🏛️ FEMA Disaster Assistance</div>
+                <div class="project-desc">Government-compliant disaster relief chatbot with Section 508 accessibility, crisis mode detection, and multi-language support.</div>
+                <div class="project-tech">React • TypeScript • USWDS • Section 508</div>
+            </a>
+            
+            <a href="https://github.com/seheart" class="project">
+                <div class="project-title">🚀 More Projects</div>
+                <div class="project-desc">Explore additional projects and contributions on GitHub, including AI/ML experiments and government technology solutions.</div>
+                <div class="project-tech">Various Technologies</div>
+            </a>
+        </div>
+        
+        <div class="contact">
+            <div class="contact-links">
+                <a href="https://github.com/seheart" class="contact-link">GitHub</a>
+                <a href="https://linkedin.com/in/seheart" class="contact-link">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
