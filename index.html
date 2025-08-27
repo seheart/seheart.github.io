@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-mode="light" data-light-theme="light" data-dark-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,192 +13,325 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #1f2328;
+            background-color: #ffffff;
+            font-size: 14px;
         }
         
-        .container {
-            max-width: 800px;
+        .header {
+            background-color: #24292f;
+            color: white;
+            padding: 16px 0;
+            border-bottom: 1px solid #d1d9e0;
+        }
+        
+        .header-content {
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 2rem;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
+            padding: 0 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .header-logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .header-nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .header-nav a {
+            color: #f0f6fc;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+        }
+        
+        .header-nav a:hover {
+            background-color: #32383f;
+        }
+        
+        .main-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 40px 32px;
+        }
+        
+        .profile-section {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 32px;
+        }
+        
+        .profile-sidebar {
+            flex-shrink: 0;
+            width: 296px;
         }
         
         .avatar {
-            width: 120px;
-            height: 120px;
+            width: 296px;
+            height: 296px;
             border-radius: 50%;
-            background: #667eea;
+            border: 1px solid #d1d9e0;
+            background: #f6f8fa;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1.5rem;
-            font-size: 3rem;
-            color: white;
-            font-weight: bold;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .subtitle {
-            font-size: 1.3rem;
-            color: #666;
-            margin-bottom: 2rem;
+            font-size: 120px;
+            color: #656d76;
             font-weight: 300;
+            margin-bottom: 20px;
         }
         
-        .bio {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .project {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid #e9ecef;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            border-color: #667eea;
-        }
-        
-        .project-title {
-            font-size: 1.2rem;
+        .profile-name {
+            font-size: 26px;
             font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: #333;
+            color: #1f2328;
+            margin-bottom: 4px;
         }
         
-        .project-desc {
-            color: #666;
-            font-size: 0.95rem;
+        .profile-username {
+            font-size: 20px;
+            font-weight: 300;
+            color: #656d76;
+            margin-bottom: 16px;
+        }
+        
+        .profile-bio {
+            font-size: 16px;
+            color: #1f2328;
+            margin-bottom: 16px;
             line-height: 1.5;
         }
         
-        .project-tech {
-            font-size: 0.85rem;
-            color: #667eea;
-            font-weight: 500;
-            margin-top: 0.75rem;
+        .profile-details {
+            font-size: 14px;
+            color: #656d76;
+            margin-bottom: 16px;
         }
         
-        .contact {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid #e9ecef;
-        }
-        
-        .contact-links {
+        .profile-contact {
             display: flex;
-            justify-content: center;
-            gap: 1rem;
+            gap: 8px;
             flex-wrap: wrap;
         }
         
-        .contact-link {
-            padding: 0.75rem 1.5rem;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
+        .contact-btn {
+            padding: 6px 16px;
+            background: #f6f8fa;
+            color: #24292f;
             text-decoration: none;
-            border-radius: 25px;
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            font-size: 14px;
             font-weight: 500;
-            transition: all 0.3s ease;
+            transition: all 0.2s;
         }
         
-        .contact-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        .contact-btn:hover {
+            background: #f3f4f6;
+            border-color: #d1d9e0;
         }
+        
+        .contact-btn.primary {
+            background: #1f883d;
+            color: white;
+            border-color: #1f883d;
+        }
+        
+        .contact-btn.primary:hover {
+            background: #1a7f37;
+        }
+        
+        .profile-main {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1f2328;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #d1d9e0;
+        }
+        
+        .repos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        
+        .repo-card {
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            padding: 16px;
+            background: #ffffff;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s;
+        }
+        
+        .repo-card:hover {
+            border-color: #0969da;
+        }
+        
+        .repo-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #0969da;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .repo-visibility {
+            font-size: 12px;
+            color: #656d76;
+            border: 1px solid #d1d9e0;
+            padding: 2px 7px;
+            border-radius: 2em;
+            font-weight: 500;
+        }
+        
+        .repo-description {
+            font-size: 12px;
+            color: #656d76;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .repo-meta {
+            font-size: 12px;
+            color: #656d76;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .repo-language {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .language-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .react-color { background: #61dafb; }
+        .typescript-color { background: #3178c6; }
         
         @media (max-width: 768px) {
-            .container {
-                margin: 1rem;
-                padding: 1.5rem;
+            .main-content {
+                padding: 20px 16px;
             }
             
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .projects {
-                grid-template-columns: 1fr;
-            }
-            
-            .contact-links {
+            .profile-section {
                 flex-direction: column;
-                align-items: center;
+                gap: 24px;
+            }
+            
+            .profile-sidebar {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .avatar {
+                width: 200px;
+                height: 200px;
+                font-size: 80px;
+                margin: 0 auto 20px;
+            }
+            
+            .repos-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="avatar">S</div>
-        <h1>Seth</h1>
-        <div class="subtitle">Digital Product Leader & Government Technology Specialist</div>
-        
-        <div class="bio">
-            Experienced product leader specializing in government technology, accessibility compliance, and user-centered design for federal agencies. Passionate about building digital services that serve the public good.
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="header-logo">seheart</a>
+            <nav class="header-nav">
+                <a href="https://github.com/seheart">GitHub</a>
+                <a href="https://linkedin.com/in/seheart">LinkedIn</a>
+            </nav>
         </div>
-        
-        <div class="projects">
-            <a href="/fema-usds-demo/" class="project">
-                <div class="project-title">🏛️ FEMA Disaster Assistance</div>
-                <div class="project-desc">Government-compliant disaster relief chatbot with Section 508 accessibility, crisis mode detection, and multi-language support.</div>
-                <div class="project-tech">React • TypeScript • USWDS • Section 508</div>
-            </a>
-            
-            <a href="https://github.com/seheart" class="project">
-                <div class="project-title">🚀 More Projects</div>
-                <div class="project-desc">Explore additional projects and contributions on GitHub, including AI/ML experiments and government technology solutions.</div>
-                <div class="project-tech">Various Technologies</div>
-            </a>
-        </div>
-        
-        <div class="contact">
-            <div class="contact-links">
-                <a href="https://github.com/seheart" class="contact-link">GitHub</a>
-                <a href="https://linkedin.com/in/seheart" class="contact-link">LinkedIn</a>
+    </header>
+
+    <main class="main-content">
+        <div class="profile-section">
+            <div class="profile-sidebar">
+                <div class="avatar">S</div>
+                <div class="profile-name">Seth</div>
+                <div class="profile-username">seheart</div>
+                <div class="profile-bio">Digital product leader specializing in government technology, accessibility compliance, and user-centered design for federal agencies.</div>
+                <div class="profile-details">🏛️ Building digital services for the public good</div>
+                <div class="profile-contact">
+                    <a href="https://github.com/seheart" class="contact-btn primary">Follow on GitHub</a>
+                    <a href="https://linkedin.com/in/seheart" class="contact-btn">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="profile-main">
+                <div class="section-title">Featured Projects</div>
+                <div class="repos-grid">
+                    <a href="/fema-usds-demo/" class="repo-card">
+                        <div class="repo-name">
+                            📦 fema-usds-demo
+                            <span class="repo-visibility">Public</span>
+                        </div>
+                        <div class="repo-description">
+                            Government-compliant disaster relief chatbot with Section 508 accessibility, crisis mode detection, and multi-language support. Built for USDS Product Leader interview.
+                        </div>
+                        <div class="repo-meta">
+                            <div class="repo-language">
+                                <div class="language-color typescript-color"></div>
+                                TypeScript
+                            </div>
+                            <div class="repo-language">
+                                <div class="language-color react-color"></div>
+                                React
+                            </div>
+                            <span>🏛️ USWDS</span>
+                            <span>♿ Section 508</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/seheart" class="repo-card">
+                        <div class="repo-name">
+                            🚀 More Projects
+                            <span class="repo-visibility">Public</span>
+                        </div>
+                        <div class="repo-description">
+                            Explore additional projects and contributions including AI/ML experiments, government technology solutions, and open source contributions.
+                        </div>
+                        <div class="repo-meta">
+                            <span>🔬 AI/ML</span>
+                            <span>🏛️ GovTech</span>
+                            <span>⚡ Various</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
